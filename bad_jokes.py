@@ -6,6 +6,13 @@ bad_files = open(text_file)
 def bad_jokes():
     for i in bad_files:
         line = i.rstrip().split(',')
-        print(input(line[0]))
+        ask = input(line[0])
+    # if the answer is not right then keep waiting for next answer 
+    # after NOPE!
+        if ask != line[1]:
+            print('NOPE!')
+    # else if the user used the 3 tries then give answer.
+        # elif :
+        
         # print(line)
 bad_jokes()
