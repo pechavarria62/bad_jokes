@@ -5,3 +5,5 @@
 ##### answer, if the user guessed correctly or not if not the system will reveal the
 ##### answer completing the joke.
 
+###### In this project i have used git clone & pull, 2 commands that I haven't used before.
+
