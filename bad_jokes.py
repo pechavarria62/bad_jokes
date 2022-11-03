@@ -11,26 +11,19 @@ def bad_jokes():
         # print(question)
         # print()
         # print(answer)
-        while (ask := input(question)) != answer:
-            pregunta += input('NOPE!')
-            
-            if count_answer == 3:
-                print("Yes!" + lol)
-            ask += 1
-    # if the answer is not right then keep waiting for next answer 
-    # after NOPE!
-    # while ask != like[1]:
-        # ask = input("'NOPE!'")
-        # if ask == line[1]:
-        #     print("Yes!" + lol)
-            
-            
-            
-        # elif :
-        # else:
-        #     print(line[1])
-        #     print(lol)
-        
+        count = 0
+        while count <=3:
+            ask = input(question).upper()
+            while ask != answer and count <= 3:
+                print('NOPE!')
+                pregunta = input('Try again! or Quit ').upper()
+            if ask == answer:
+                print('Yes!!',lol)
+            else:
+                print(answer)
+                print(lol)
+        count +=1
 bad_jokes()
 # while (i := sys.stdin.read(1)) != '\n':
 #   do_smthg(i)
+# while (ask := input(question).upper()) != answer:
